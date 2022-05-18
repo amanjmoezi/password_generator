@@ -18,4 +18,11 @@ body
     left:  50%;
     transform: translate(-50%,-50%);
     padding: 16px;
+    font-family: Arial;
+}
+.container form 
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
 }
