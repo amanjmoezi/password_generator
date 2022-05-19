@@ -9,3 +9,14 @@ function makePassword() {
     }
     console.log(password);
 }   
+btnNewPass.addEventListener("click",(e)=>{
+    e.preventDefault()
+    makePassword()
+    navigator.clipboard.writeText(password)
+    btnNewPass.classList.add("passwordM")
+    btnNewPass.innerText = "password copyed!"
+    setTimeout(() => {
+        btnNewPass.classList.remove("passwordM")
+        btnNewPass.innerText = "make a password for me!"
+    }, 500);
+})
